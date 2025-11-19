@@ -1,0 +1,62 @@
+<mat-card class="product-form-card">
+  <h2 mat-dialog-title class="form-title">
+    {{ isEditMode ? 'Editar Producto' : 'Nuevo Producto' }}
+  </h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="outline" class="form-field productname-txt">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" required />
+      <mat-error *ngIf="form.get('nombre')?.hasError('required')">
+        El nombre es obligatorio
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field textarea-field">
+      <mat-label>Descripción</mat-label>
+      <textarea matInput rows="4" formControlName="descripcion" required></textarea>
+      <mat-error *ngIf="form.get('descripcion')?.hasError('required')">
+        La descripción es obligatoria
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Precio</mat-label>
+      <input matInput formControlName="precio" required maxlength="10" />
+      <mat-error *ngIf="form.get('precio')?.hasError('required')">
+        El precio es obligatorio
+    </mat-error>
+    <mat-error *ngIf="form.get('precio')?.hasError('maxlength') && form.get('precio')?.touched">
+      Máximo 10 dígitos permitidos
+    </mat-error>
+    <mat-error *ngIf="form.get('precio')?.hasError('pattern')">
+      Formato inválido. Debe ser hasta 8 enteros y 2 decimales. Ej: 12345678.99
+  </mat-error>
+  </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Stock</mat-label>
+      <input matInput type="text" formControlName="stock" required maxlength="8" />
+      <mat-error *ngIf="form.get('stock')?.hasError('required')">
+        El stock es obligatorio
+      </mat-error>
+      <mat-error *ngIf="form.get('stock')?.hasError('pattern')">
+      Solo números positivos de hasta 8 dígitos.
+    </mat-error>    
+    </mat-form-field>
+
+    <div class="button-container">
+      <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+        {{ isEditMode ? 'Guardar Cambios' : 'Crear' }}
+      </button>
+
+      <button mat-stroked-button color="warn" type="button" (click)="onCancel()">
+        Cancelar
+      </button>
+    </div>
+
+  </form>
+</mat-card>
+
+

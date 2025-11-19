@@ -1,0 +1,23 @@
+.sidebar-header {
+  background: linear-gradient(90deg, #1976d2, #1565c0);
+  color: white;
+}
+
+mat-nav-list {
+  padding-top: 0;
+}
+
+a.mat-list-item {
+  color: #333;
+  font-weight: 500;
+}
+
+a.mat-list-item.active {
+  background-color: rgba(25, 118, 210, 0.1);
+  color: #1976d2;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+

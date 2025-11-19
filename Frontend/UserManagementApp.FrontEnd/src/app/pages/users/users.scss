@@ -1,0 +1,37 @@
+.usuarios-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.usuarios-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+mat-table {
+  width: 100%;
+}
+
+.btn-edit mat-icon {
+  color: #008000; /* verde Material Design */
+}
+
+.btn-delete mat-icon {
+  color: #e53935; /* rojo Material Design */
+}
+
+button mat-icon {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+button:hover mat-icon {
+  transform: scale(1.2);
+}
+
+mat-paginator {
+  margin-top: 1rem;
+}
+

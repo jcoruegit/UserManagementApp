@@ -1,0 +1,17 @@
+   <main class="content">
+      <div *ngIf="isAdmin">
+        <mat-card>
+          <h2>Usuarios por Rol</h2>
+          <app-users-role-chart [users]="users"></app-users-role-chart>
+      </mat-card>
+    </div>
+
+    <mat-card style="margin-top: 20px;">
+      <h2>Top 5 productos con más stock</h2>
+      <app-product-top-stock-chart [products]="products"></app-product-top-stock-chart>
+    </mat-card>
+    </main>
+
+
+
+

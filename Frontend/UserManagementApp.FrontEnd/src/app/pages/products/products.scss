@@ -1,0 +1,26 @@
+.productos-container {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.productos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+mat-table {
+  width: 100%;
+  overflow: auto;
+}
+
+.btn-edit mat-icon {
+  color: #008000; /* verde Material Design */
+}
+
+.btn-delete mat-icon {
+  color: #e53935; /* Rojo */
+}
+

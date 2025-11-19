@@ -1,0 +1,25 @@
+.unauthorized-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #f5f5f5;
+}
+
+.unauthorized-card {
+  text-align: center;
+  padding: 3rem;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.unauthorized-icon {
+  font-size: 30px;
+  color: #e53935; /* rojo Material */
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+}

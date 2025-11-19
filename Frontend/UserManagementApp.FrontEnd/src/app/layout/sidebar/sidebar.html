@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="sidebar-header">
+  Menú
+</mat-toolbar>
+
+<mat-nav-list>
+  <a mat-list-item routerLink="/dashboard" routerLinkActive="active">
+    <mat-icon>dashboard</mat-icon>
+    Dashboard
+  </a>
+  <a *ngIf="userRole === 'Admin'" mat-list-item routerLink="/users" routerLinkActive="active">
+    <mat-icon>group</mat-icon>
+    Usuarios
+  </a>
+  <a mat-list-item routerLink="/products" routerLinkActive="active">
+    <mat-icon>inventory_2</mat-icon>
+    Productos
+  </a>
+</mat-nav-list>
+
+
+

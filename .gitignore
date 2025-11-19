@@ -1,0 +1,28 @@
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.db
+
+# NuGet
+packages/
+*.nupkg
+
+# Rider / IDE
+.idea/
+*.iml
+
+# Node / Angular
+UserManagementApp.Frontend/node_modules/
+UserManagementApp.Frontend/dist/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db

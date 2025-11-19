@@ -1,0 +1,41 @@
+.user-form-card {
+  width: 400px;               /* Aumentamos el ancho del formulario */
+  margin: 3rem auto;
+  padding: 3rem 2.5rem;       /* Más espacio interno */
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 2rem;        /* Mayor separación entre campos */
+}
+
+mat-error {
+  font-size: 14px;
+  margin-top: 6px;            /* Separa más el error del input */
+  margin-left: -18px;
+  display: block;
+  color: #d32f2f;
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 1.5rem;
+  
+}
+
+h2[mat-dialog-title] {
+  margin-bottom: 1.5rem;      /* Más espacio debajo del título */
+  text-align: center;
+}
+
+
+
+
+
+
+
+

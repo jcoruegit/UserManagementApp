@@ -1,0 +1,53 @@
+.product-form-card {
+  max-width: 720px;  /* Más ancho del formulario */
+  margin: 2rem auto;
+  padding: 2.6rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas */
+  gap: 26px 36px; /* separación vertical y horizontal */
+}
+
+/* Campos que deben ocupar todo el ancho */
+.textarea-field, 
+.button-container,
+.productname-txt {
+  grid-column: span 2;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.textarea-field textarea {
+  resize: none;
+}
+
+/* Mejor separación para los errores */
+mat-error {
+  font-size: 0.82rem;
+  margin-top: 6px;
+  display: block;
+  line-height: 1.2;
+  margin-left: -18px;
+  white-space: normal; /* permite mensaje en varias líneas */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
