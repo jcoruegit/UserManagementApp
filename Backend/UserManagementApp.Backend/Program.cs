@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using UserManagementApp.Application.Interfaces;
-using UserManagementApp.Application.Services;
 using UserManagementApp.Domain.Entities;
-using UserManagementApp.Domain.Interfaces;
+using UserManagementApp.Application.Interfaces.Repositories;
 using UserManagementApp.Infrastructure.Data;
 using UserManagementApp.Infrastructure.Repositories;
+using UserManagementApp.Infrastructure.Services;
+using UserManagementApp.Application.Interfaces.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

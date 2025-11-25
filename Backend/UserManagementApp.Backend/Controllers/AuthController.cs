@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserManagementApp.Application.Response;
-using UserManagementApp.Application.Services;
 using UserManagementApp.Backend.Dtos;
 using UserManagementApp.Domain.Entities;
 using UserManagementApp.Domain.Enums;
+using UserManagementApp.Infrastructure.Services;
 
 namespace UserManagementApp.Backend.Controllers
 {

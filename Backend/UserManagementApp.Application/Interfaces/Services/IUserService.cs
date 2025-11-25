@@ -2,7 +2,7 @@
 using UserManagementApp.Application.Response;
 using UserManagementApp.Domain.Entities;
 
-namespace UserManagementApp.Application.Interfaces
+namespace UserManagementApp.Application.Interfaces.Services
 {
     public interface IUserService
     {

@@ -5,10 +5,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using UserManagementApp.Domain.Entities;
-using UserManagementApp.Domain.Interfaces;
+using UserManagementApp.Application.Interfaces.Repositories;
 using UserManagementApp.Infrastructure.Data;
 
-namespace UserManagementApp.Application.Services
+namespace UserManagementApp.Infrastructure.Services
 {
     public class AuthService
     {

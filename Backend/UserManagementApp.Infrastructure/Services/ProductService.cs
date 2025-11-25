@@ -1,9 +1,9 @@
 ﻿using UserManagementApp.Application.Dtos;
-using UserManagementApp.Application.Interfaces;
 using UserManagementApp.Domain.Entities;
-using UserManagementApp.Domain.Interfaces;
+using UserManagementApp.Application.Interfaces.Repositories;
+using UserManagementApp.Application.Interfaces.Services;
 
-namespace UserManagementApp.Application.Services
+namespace UserManagementApp.Infrastructure.Services
 {
     public class ProductService : IProductService
     {

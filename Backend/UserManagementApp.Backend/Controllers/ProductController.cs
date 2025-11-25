@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UserManagementApp.Application.Dtos;
-using UserManagementApp.Application.Interfaces;
+using UserManagementApp.Application.Interfaces.Services;
 using UserManagementApp.Application.Response;
 
 namespace UserManagementApp.Backend.Controllers

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using UserManagementApp.Domain.Interfaces;
+using UserManagementApp.Application.Interfaces.Repositories;
 using UserManagementApp.Infrastructure.Data;
 
 namespace UserManagementApp.Infrastructure.Repositories

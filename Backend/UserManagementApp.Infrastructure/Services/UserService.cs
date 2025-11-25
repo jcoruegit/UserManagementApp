@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UserManagementApp.Application.Dtos;
-using UserManagementApp.Application.Interfaces;
 using UserManagementApp.Application.Response;
 using UserManagementApp.Domain.Entities;
 using UserManagementApp.Domain.Enums;
-using UserManagementApp.Domain.Interfaces;
+using UserManagementApp.Application.Interfaces.Repositories;
 using UserManagementApp.Infrastructure.Data;
+using UserManagementApp.Application.Interfaces.Services;
 
-namespace UserManagementApp.Application.Services
+namespace UserManagementApp.Infrastructure.Services
 {
     public class UserService : IUserService
     {
