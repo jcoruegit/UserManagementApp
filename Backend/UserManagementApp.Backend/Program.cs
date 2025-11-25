@@ -27,14 +27,14 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<AuthService>();
 
-
+var allowedOrigins = builder.Configuration["AllowedOrigins"]?.Split(";");
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+            policy.WithOrigins(allowedOrigins!).AllowAnyMethod().AllowAnyHeader().AllowCredentials();
         });
 });
 
