@@ -26,3 +26,7 @@ package-lock.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Backend publish profiles (no se deben versionar)
+**/Properties/PublishProfiles/
+**/Properties/ServiceDependencies/
