@@ -39,7 +39,7 @@ jobs:
           action: "upload"                          # (<-- clave!)
           app_location: "Frontend/UserManagementApp.FrontEnd/dist/UserManagementApp.FrontEnd"
           api_location: ""
-          output_location: ""                       # no se usa con upload
+          output_location: "dist/UserManagementApp.FrontEnd/browser"                       # no se usa con upload
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -50,5 +50,6 @@ jobs:
         with:
           action: "close"
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+
 
 
