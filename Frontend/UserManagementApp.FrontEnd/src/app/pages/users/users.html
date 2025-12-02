@@ -25,10 +25,10 @@
     <ng-container matColumnDef="acciones">
       <mat-header-cell *matHeaderCellDef> Acciones </mat-header-cell>
       <mat-cell *matCellDef="let user">
-      <button mat-icon-button class="btn-edit" (click)="editUser(user)">
+      <button mat-icon-button class="btn-edit" *ngIf="user.id !== 1" (click)="editUser(user)">
           <mat-icon>edit</mat-icon>
         </button>
-        <button mat-icon-button class="btn-delete" (click)="deleteUser(user.id)">
+        <button mat-icon-button class="btn-delete" *ngIf="user.id !== 1" (click)="deleteUser(user.id)">
           <mat-icon>delete</mat-icon>
         </button>
       </mat-cell>
