@@ -136,6 +136,30 @@ http://localhost:4200
 
 ---
 
+## 📌 Nota importante sobre el Frontend
+
+Si bien el proyecto incluye una aplicación en Angular con Angular Material, su objetivo principal es funcionar como una interfaz sencilla para consumir el backend.
+
+La mayor parte del diseño, arquitectura y lógica compleja del proyecto se encuentra en el Backend, donde se aplican:
+
+Clean Architecture
+
+Entity Framework Core
+
+Repositorios
+
+Servicios y validaciones
+
+Migraciones + datos seed
+
+JWT + autorización por roles
+
+Estructura modularizada y escalable
+
+El Frontend fue diseñado de manera deliberadamente simple para mantener el enfoque en la API y en la arquitectura backend.
+
+---
+
 ## 📝 Licencia
 
 Este proyecto está bajo licencia **MIT** — ver archivo `LICENSE` para más detalles.
